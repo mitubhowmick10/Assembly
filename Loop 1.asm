@@ -23,7 +23,7 @@ section .text
 	mov RAX, 0
 	call scanf
 
-	mov RCX, 10
+	mov RCX, [x]
 	mov RDX, 5
 
 printt:
@@ -41,7 +41,7 @@ printt:
 	pop RCX
 
 	ADD RDX, 5
-;	DEC RCX
+	DEC RCX
 	
 
 	jnz printt
@@ -55,7 +55,6 @@ printt:
 	
 
 	
-
 
 
 
